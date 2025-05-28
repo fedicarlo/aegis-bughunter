@@ -1,3 +1,4 @@
+cat > index.html << 'EOF'
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -6,50 +7,103 @@
   <title>AEGIS - Sistema Autônomo de Bug Hunting</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       background-color: #0f0f0f;
-      color: #f5f5f5;
+      color: #f0f0f0;
+      font-family: 'Courier New', Courier, monospace;
       margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background-color: #111;
       padding: 20px;
+      text-align: center;
     }
-    h1 {
+    header h1 {
       color: #00ff88;
+      font-size: 2.5em;
+      margin: 0;
     }
-    a {
-      color: #00ff88;
-      text-decoration: none;
-    }
-    .container {
-      max-width: 800px;
+    .content {
+      flex: 1;
+      padding: 20px;
+      max-width: 900px;
       margin: auto;
     }
-    .footer {
-      margin-top: 40px;
-      font-size: 0.8em;
-      color: #888;
+    h2 {
+      color: #fff;
+      border-left: 5px solid #00ff88;
+      padding-left: 10px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li::before {
+      content: '⚡';
+      margin-right: 10px;
+      color: #00ff88;
+    }
+    .button {
+      background: #00ff88;
+      color: #0f0f0f;
+      padding: 10px 20px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 10px;
+    }
+    .social-icons a {
+      margin: 0 10px;
+      color: #00ff88;
+      text-decoration: none;
+      font-size: 1.5em;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.5em;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>AEGIS</h1>
-    <h2>Sistema Autônomo de Bug Hunting</h2>
-    <p>O AEGIS é um sistema completo para automação de pentests e Bug Hunting, com recursos de inteligência artificial, integração de ferramentas clássicas e geração automatizada de relatórios.</p>
 
-    <h3>⚡ Funcionalidades:</h3>
-    <ul>
-      <li>Scans automatizados: Nmap, SQLMap, Ffuf, Subfinder, Nuclei</li>
-      <li>Inferência de vulnerabilidades com IA</li>
-      <li>Relatórios automáticos em TXT, HTML e PDF</li>
-      <li>Notificações via Slack</li>
-      <li>Captura automática de screenshots</li>
-    </ul>
+<header>
+  <h1>AEGIS</h1>
+  <p>Sistema Autônomo de Bug Hunting</p>
+</header>
 
-    <p>Veja o projeto completo no <a href="https://github.com/fedicarlo/aegis-bughunter" target="_blank">GitHub</a>.</p>
+<div class="content">
+  <h2>🚀 Funcionalidades:</h2>
+  <ul>
+    <li>Scans automatizados: Nmap, SQLMap, Ffuf, Subfinder, Nuclei</li>
+    <li>Inferência de vulnerabilidades com IA</li>
+    <li>Relatórios automáticos em TXT, HTML e PDF</li>
+    <li>Notificações via Slack</li>
+    <li>Captura automática de screenshots</li>
+  </ul>
 
-    <div class="footer">
-      &copy; 2025 Felipe Di Carlo | AEGIS - Bug Hunting Automation
-    </div>
+  <a class="button" href="https://github.com/fedicarlo/aegis-bughunter" target="_blank">🔗 Ver no GitHub</a>
+  <a class="button" href="https://github.com/fedicarlo/aegis-bughunter/archive/refs/heads/main.zip" target="_blank">⬇️ Download</a>
+</div>
+
+<footer>
+  <p>© 2025 Felipe Di Carlo | AEGIS - Bug Hunting Automation</p>
+  <div class="social-icons">
+    <a href="https://github.com/fedicarlo" target="_blank">🐙</a>
+    <a href="https://linkedin.com/in/seulinkedin" target="_blank">💼</a>
+    <a href="https://twitter.com/seutwitter" target="_blank">🐦</a>
   </div>
+</footer>
+
 </body>
 </html>
+EOF
