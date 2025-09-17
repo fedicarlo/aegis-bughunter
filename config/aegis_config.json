@@ -1,0 +1,137 @@
+{
+    "aegis_config": {
+        "version": "1.0.0",
+        "description": "Configuração principal do AEGIS Bug Hunter",
+        "last_updated": "2024-01-01T00:00:00Z"
+    },
+    "scanning": {
+        "default_timeout": 10,
+        "max_threads": 5,
+        "delay_between_requests": {
+            "min": 0.5,
+            "max": 2.0
+        },
+        "retry_attempts": 3,
+        "user_agent_rotation": true,
+        "stealth_mode": true
+    },
+    "fuzzing": {
+        "enabled": true,
+        "max_payloads_per_type": 10,
+        "adaptive_delays": true,
+        "payload_encoding": true,
+        "waf_bypass_techniques": true
+    },
+    "defense_detection": {
+        "enabled": true,
+        "test_all_wafs": true,
+        "rate_limit_testing": true,
+        "captcha_detection": true,
+        "csrf_detection": true
+    },
+    "memory_system": {
+        "enabled": true,
+        "database_path": "aegis_memory.db",
+        "store_payloads": true,
+        "store_vulnerabilities": true,
+        "store_defenses": true,
+        "cleanup_old_data": true,
+        "retention_days": 90
+    },
+    "ai_interpreter": {
+        "enabled": true,
+        "use_openai": true,
+        "fallback_to_local": true,
+        "model": "gpt-3.5-turbo",
+        "max_tokens": 1000,
+        "temperature": 0.7
+    },
+    "reporting": {
+        "formats": {
+            "json": true,
+            "markdown": true,
+            "pdf": true,
+            "html": true,
+            "csv": true
+        },
+        "include_screenshots": false,
+        "detailed_payloads": true,
+        "executive_summary": true,
+        "technical_details": true
+    },
+    "output": {
+        "base_directory": "output",
+        "create_subdirectories": true,
+        "compress_results": true,
+        "shared_directory": "shared_reports"
+    },
+    "logging": {
+        "level": "INFO",
+        "file_logging": true,
+        "console_logging": true,
+        "log_directory": "logs",
+        "max_log_size_mb": 10,
+        "backup_count": 5
+    },
+    "security": {
+        "rate_limiting_respect": true,
+        "waf_detection_respect": true,
+        "ethical_scanning": true,
+        "scope_validation": true
+    },
+    "integrations": {
+        "external_tools": {
+            "sqlmap": {
+                "enabled": false,
+                "path": "/usr/bin/sqlmap"
+            },
+            "nuclei": {
+                "enabled": false,
+                "path": "/usr/bin/nuclei"
+            },
+            "ffuf": {
+                "enabled": false,
+                "path": "/usr/bin/ffuf"
+            }
+        },
+        "notifications": {
+            "email": {
+                "enabled": false,
+                "smtp_server": "localhost",
+                "smtp_port": 587,
+                "use_tls": true,
+                "username": "",
+                "password": "",
+                "from_address": "aegis@security.local",
+                "to_addresses": []
+            },
+            "webhook": {
+                "enabled": false,
+                "urls": []
+            },
+            "slack": {
+                "enabled": false,
+                "webhook_url": "",
+                "channel": "#security"
+            }
+        }
+    },
+    "advanced": {
+        "custom_headers": {},
+        "proxy_settings": {
+            "enabled": false,
+            "http_proxy": "",
+            "https_proxy": "",
+            "proxy_rotation": false
+        },
+        "ip_rotation": {
+            "enabled": false,
+            "ip_list": []
+        },
+        "custom_payloads": {
+            "enabled": true,
+            "payload_files": []
+        }
+    }
+}
+

@@ -1,0 +1,78 @@
+[2025-07-27 01:03:21] 🧠 Iniciando fluxo completo contra: https://www.underlabz.com.br
+[2025-07-27 01:03:21] ➡️ Executando módulo: agent_loop
+[2025-07-27 01:03:22] ✅ Módulo 'agent_loop' executado com sucesso (1.51s)
+[2025-07-27 01:03:22] ➡️ Executando módulo: pre_recon
+[2025-07-27 01:03:42] ✅ Módulo 'pre_recon' executado com sucesso (19.81s)
+[2025-07-27 01:03:42] ➡️ Executando módulo: headers_analyzer
+[2025-07-27 01:03:46] ✅ Módulo 'headers_analyzer' executado com sucesso (3.81s)
+[2025-07-27 01:03:46] ➡️ Executando módulo: parser
+[2025-07-27 01:03:47] ✅ Módulo 'parser' executado com sucesso (0.56s)
+[2025-07-27 01:03:47] ➡️ Executando módulo: inject_finder
+[2025-07-27 01:08:04] ✅ Módulo 'inject_finder' executado com sucesso (257.49s)
+[2025-07-27 01:08:04] ➡️ Executando módulo: fuzzer
+[2025-07-27 01:13:15] ✅ Módulo 'fuzzer' executado com sucesso (310.95s)
+[2025-07-27 01:13:15] ➡️ Executando módulo: defense_detector
+[2025-07-27 01:13:47] ✅ Módulo 'defense_detector' executado com sucesso (31.54s)
+[2025-07-27 01:13:47] ➡️ Executando módulo: memory_system
+[2025-07-27 01:13:47] ✅ Módulo 'memory_system' executado com sucesso (0.02s)
+[2025-07-27 01:13:47] ➡️ Executando módulo: ai_interpreter
+[2025-07-27 01:13:47] ✅ Módulo 'ai_interpreter' executado com sucesso (0.0s)
+[2025-07-27 01:13:47] ➡️ Executando módulo: estado_printer
+[2025-07-27 01:13:47] ✅ Módulo 'estado_printer' executado com sucesso (0.0s)
+[2025-07-27 01:13:47] ➡️ Executando módulo: report_gen
+[2025-07-27 01:13:47] ✅ Módulo 'report_gen' executado com sucesso (0.07s)
+[2025-07-27 01:13:47] ➡️ Executando módulo: reporter
+[2025-07-27 01:13:47] ✅ Módulo 'reporter' executado com sucesso (0.01s)
+[2025-07-27 01:13:47] 🏁 Fluxo de execução finalizado
+[2025-07-27 01:34:57] 🧠 Iniciando fluxo completo contra: https://juice-shop.herokuapp.com
+[2025-07-27 01:34:57] ➡️ Executando módulo: agent_loop
+[2025-07-27 01:34:58] ✅ Módulo 'agent_loop' executado com sucesso (1.51s)
+[2025-07-27 01:34:58] ➡️ Executando módulo: pre_recon
+[2025-07-27 01:35:32] ✅ Módulo 'pre_recon' executado com sucesso (33.72s)
+[2025-07-27 01:35:32] ➡️ Executando módulo: headers_analyzer
+[2025-07-27 01:36:05] ✅ Módulo 'headers_analyzer' executado com sucesso (33.07s)
+[2025-07-27 01:36:05] ➡️ Executando módulo: parser
+[2025-07-27 01:36:06] ✅ Módulo 'parser' executado com sucesso (0.94s)
+[2025-07-27 01:36:06] ➡️ Executando módulo: inject_finder
+[2025-07-27 01:39:03] ✅ Módulo 'inject_finder' executado com sucesso (176.58s)
+[2025-07-27 01:39:03] ➡️ Executando módulo: fuzzer
+[2025-07-27 01:39:03] ✅ Módulo 'fuzzer' executado com sucesso (0.0s)
+[2025-07-27 01:39:03] ➡️ Executando módulo: defense_detector
+[2025-07-27 01:40:40] ✅ Módulo 'defense_detector' executado com sucesso (97.52s)
+[2025-07-27 01:40:40] ➡️ Executando módulo: memory_system
+[2025-07-27 01:40:40] ✅ Módulo 'memory_system' executado com sucesso (0.02s)
+[2025-07-27 01:40:40] ➡️ Executando módulo: ai_interpreter
+[2025-07-27 01:40:40] ✅ Módulo 'ai_interpreter' executado com sucesso (0.0s)
+[2025-07-27 01:40:40] ➡️ Executando módulo: estado_printer
+[2025-07-27 01:40:40] ✅ Módulo 'estado_printer' executado com sucesso (0.0s)
+[2025-07-27 01:40:40] ➡️ Executando módulo: report_gen
+[2025-07-27 01:40:40] ✅ Módulo 'report_gen' executado com sucesso (0.0s)
+[2025-07-27 01:40:40] ➡️ Executando módulo: reporter
+[2025-07-27 01:40:40] ✅ Módulo 'reporter' executado com sucesso (0.01s)
+[2025-07-27 01:40:40] 🏁 Fluxo de execução finalizado
+[2025-09-17 18:15:57] 🧠 Iniciando fluxo completo contra: https://juice-shop.herokuapp.com
+[2025-09-17 18:15:57] ➡️ Executando módulo: agent_loop
+[2025-09-17 18:15:58] ✅ Módulo 'agent_loop' executado com sucesso (1.51s)
+[2025-09-17 18:15:58] ➡️ Executando módulo: pre_recon
+[2025-09-17 18:16:23] ✅ Módulo 'pre_recon' executado com sucesso (24.4s)
+[2025-09-17 18:16:23] ➡️ Executando módulo: headers_analyzer
+[2025-09-17 18:16:32] ✅ Módulo 'headers_analyzer' executado com sucesso (9.12s)
+[2025-09-17 18:16:32] ➡️ Executando módulo: parser
+[2025-09-17 18:16:33] ✅ Módulo 'parser' executado com sucesso (1.02s)
+[2025-09-17 18:16:33] ➡️ Executando módulo: inject_finder
+[2025-09-17 18:17:39] ✅ Módulo 'inject_finder' executado com sucesso (66.3s)
+[2025-09-17 18:17:39] ➡️ Executando módulo: fuzzer
+[2025-09-17 18:17:39] ✅ Módulo 'fuzzer' executado com sucesso (0.0s)
+[2025-09-17 18:17:39] ➡️ Executando módulo: defense_detector
+[2025-09-17 18:18:06] ✅ Módulo 'defense_detector' executado com sucesso (26.76s)
+[2025-09-17 18:18:06] ➡️ Executando módulo: memory_system
+[2025-09-17 18:18:06] ✅ Módulo 'memory_system' executado com sucesso (0.02s)
+[2025-09-17 18:18:06] ➡️ Executando módulo: ai_interpreter
+[2025-09-17 18:18:06] ✅ Módulo 'ai_interpreter' executado com sucesso (0.0s)
+[2025-09-17 18:18:06] ➡️ Executando módulo: estado_printer
+[2025-09-17 18:18:06] ✅ Módulo 'estado_printer' executado com sucesso (0.0s)
+[2025-09-17 18:18:06] ➡️ Executando módulo: report_gen
+[2025-09-17 18:18:06] ✅ Módulo 'report_gen' executado com sucesso (0.0s)
+[2025-09-17 18:18:06] ➡️ Executando módulo: reporter
+[2025-09-17 18:18:06] ✅ Módulo 'reporter' executado com sucesso (0.01s)
+[2025-09-17 18:18:06] 🏁 Fluxo de execução finalizado

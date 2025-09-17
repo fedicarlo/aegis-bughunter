@@ -1,0 +1,36 @@
+{
+    "target_url": "https://juice-shop.herokuapp.com",
+    "timestamp": "2025-09-17T18:18:06.569765",
+    "status_modulos": {
+        "pre_recon": {
+            "status": "✅",
+            "arquivo": "pre_recon.json",
+            "concluido": true
+        },
+        "headers_analysis": {
+            "status": "✅",
+            "arquivo": "headers_analysis.json",
+            "concluido": true
+        },
+        "parser": {
+            "status": "✅",
+            "arquivo": "parser.json",
+            "concluido": true
+        },
+        "injects": {
+            "status": "✅",
+            "arquivo": "injects.json",
+            "concluido": true
+        },
+        "relatorio_final": {
+            "status": "✅",
+            "arquivo": "relatorio_final.json",
+            "concluido": true
+        }
+    },
+    "estatisticas": {
+        "modulos_concluidos": 5,
+        "modulos_com_erro": 0,
+        "percentual_conclusao": 100.0
+    }
+}

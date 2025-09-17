@@ -1,0 +1,33 @@
+{
+    "target_url": "https://juice-shop.herokuapp.com",
+    "timestamp": "2025-09-17T18:18:06.548591",
+    "defesas_detectadas": [
+        {
+            "nome": "Cloudflare WAF",
+            "tipo": "Cloudflare",
+            "evidencia": "Conteúdo encontrado: cloudflare",
+            "confianca": 0.9,
+            "detalhes": {},
+            "timestamp": "2025-09-17T18:17:40.717375"
+        },
+        {
+            "nome": "Rate Limiting",
+            "tipo": "Rate Limiting (Soft)",
+            "evidencia": "Tempo de resposta aumentou drasticamente: 1.07s",
+            "confianca": 0.7,
+            "detalhes": {
+                "tempo_medio_inicial": 0.29632578577314106,
+                "tempo_atual": 1.070199966430664
+            },
+            "timestamp": "2025-09-17T18:17:55.621453"
+        }
+    ],
+    "total_defesas": 2,
+    "nivel_protecao": "MÉDIO",
+    "recomendacoes_bypass": [
+        "Implementar delays maiores entre requisições",
+        "Tentar bypass via subdominios não protegidos",
+        "Usar rotação de IPs e proxies",
+        "Usar rotação de User-Agents e IPs para bypass do Cloudflare"
+    ]
+}
