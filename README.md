@@ -1,52 +1,56 @@
 # 🛡️ AEGIS Bug Hunter
 
-**Sistema Autônomo de Bug Bounty com IA Embarcada**
-
+**Sistema Autônomo de Bug Bounty com IA Embarcada**  
 *"O hacker que nunca dorme"*
 
-## 📋 Descrição
+---
 
-O AEGIS Bug Hunter é um sistema automatizado e inteligente para descoberta de vulnerabilidades em aplicações web. Desenvolvido com IA embarcada, ele executa análises abrangentes de segurança de forma autônoma, identificando falhas de segurança e gerando relatórios detalhados.
+## 1. Descrição
 
-## ✨ Características Principais
+O AEGIS Bug Hunter é um sistema automatizado e inteligente para descoberta de vulnerabilidades em aplicações web. Desenvolvido com IA embarcada, ele executa análises abrangentes de segurança de forma autônoma, identificando falhas e gerando relatórios detalhados.
 
-### 🤖 IA Embarcada
-- Análise inteligente de padrões de vulnerabilidades
-- Aprendizado contínuo com sistema de memória
+---
+
+## 2. Características Principais
+
+### 2.1 IA Embarcada
+- Análise de padrões de vulnerabilidades
+- Aprendizado contínuo com memória local
 - Geração automática de payloads adaptativos
-- Correlação de dados para insights avançados
+- Correlação de dados e sugestões de próximos passos
 
-### 🔍 Módulos de Análise
-- **Pre-Recon**: Reconhecimento inicial e fingerprinting
-- **Headers Analyzer**: Análise de cabeçalhos HTTP e configurações de segurança
-- **Parser**: Extração e análise de conteúdo web
-- **Inject Finder**: Detecção de vulnerabilidades de injeção
-- **Fuzzer Adaptativo**: Fuzzing inteligente com evasão de WAF
-- **Defense Detector**: Identificação de sistemas de proteção
-- **Memory System**: Sistema de memória e correlação de dados
-- **AI Interpreter**: Análise interpretativa com IA
+### 2.2 Módulos de Análise
+- Pre-Recon: fingerprinting e reconhecimento inicial
+- Headers Analyzer: análise de segurança em cabeçalhos HTTP
+- Parser: análise da estrutura HTML, scripts e formulários
+- Inject Finder: verificação de SQLi, XSS, header injection etc.
+- Fuzzer Adaptativo: fuzzing evasivo e inteligente
+- Defense Detector: detecção de WAF, rate limiting e CAPTCHAs
+- Memory System: comparação com vulnerabilidades anteriores
+- AI Interpreter: interpretação dos resultados via IA
 
-### 📊 Sistema de Relatórios
-- Relatórios em múltiplos formatos (JSON, Markdown, HTML, PDF)
-- Resumo executivo e detalhes técnicos
-- Visualizações e gráficos de segurança
-- Recomendações prioritárias
+### 2.3 Sistema de Relatórios
+- Geração automática nos formatos: JSON, Markdown, HTML e PDF
+- Resumo executivo + seção técnica
+- Evidências, payloads, grau de risco e recomendações
 
-### 🛡️ Recursos Avançados
+### 2.4 Recursos Avançados
 - Detecção automática de WAF e sistemas de proteção
-- Bypass inteligente de rate limiting
-- Rotação de User-Agents e IPs
-- Modo stealth para evasão de detecção
-- Sistema de configuração flexível
+- Bypass de rate limit com delay adaptativo
+- Rotação de User-Agents e headers
+- Modo stealth ativado por padrão
+- Arquitetura modular com configuração via JSON
 
-## 🚀 Instalação
+---
 
-### Pré-requisitos
+## 3. Instalação
+
+### 3.1 Pré-requisitos
 - Python 3.8+
 - pip3
 - Conexão com internet
 
-### Instalação das Dependências
+### 3.2 Instalação das dependências
 ```bash
 cd aegishunter
 pip3 install -r requirements.txt
@@ -65,29 +69,29 @@ pip3 install openai
 pip3 install pillow
 ```
 
-## 🎯 Uso Básico
+## 4. Uso Básico
 
 ### Execução Simples
 ```bash
 python3 run.py
 ```
 
-### Execução com Alvo Específico
+### 4.2 Execução com Alvo Específico
 ```bash
 echo "https://exemplo.com" | python3 run.py
 ```
 
-### Execução com Configuração Personalizada
+### 4.3 Execução com Configuração Customizada
 ```bash
 # Edite config/aegis_config.json antes da execução
 python3 run.py
 ```
 
-## ⚙️ Configuração
+## 5. Configuração Avançada
 
 O sistema utiliza o arquivo `config/aegis_config.json` para configurações avançadas:
 
-### Configurações de Scanning
+### 5.1 Scanning
 ```json
 {
     "scanning": {
@@ -102,7 +106,7 @@ O sistema utiliza o arquivo `config/aegis_config.json` para configurações avan
 }
 ```
 
-### Configurações de IA
+### 5.2 Configurações de IA
 ```json
 {
     "ai_interpreter": {
@@ -114,7 +118,7 @@ O sistema utiliza o arquivo `config/aegis_config.json` para configurações avan
 }
 ```
 
-### Configurações de Relatórios
+### 5.3 Configurações de Relatórios
 ```json
 {
     "reporting": {
@@ -128,7 +132,7 @@ O sistema utiliza o arquivo `config/aegis_config.json` para configurações avan
 }
 ```
 
-## 📁 Estrutura do Projeto
+## 6 Estrutura do Projeto
 
 ```
 aegishunter/
@@ -158,153 +162,139 @@ aegishunter/
 └── shared_reports/            # Relatórios compartilhados
 ```
 
-## 🔧 Módulos Detalhados
+## 7 Módulos Detalhados
 
-### Agent Loop
-Coordena a execução de todos os módulos e gerencia o fluxo de trabalho.
+7. Módulos Detalhados
 
-### Pre-Recon
-- Verificação de conectividade
-- Fingerprinting de servidor
-- Detecção de tecnologias
-- Análise de DNS e portas
+7.1 Agent Loop
 
-### Headers Analyzer
-- Análise de cabeçalhos de segurança
-- Score de segurança HTTP
-- Detecção de configurações inseguras
-- Recomendações de hardening
+Executa os módulos em sequência, controla delays e ambiente.
 
-### Parser
-- Extração de formulários
-- Análise de links e recursos
-- Detecção de scripts e tecnologias
-- Mapeamento de superfície de ataque
+7.2 Pre-Recon
 
-### Inject Finder
-- Detecção de SQL Injection
-- Identificação de XSS
-- Command Injection
-- File Inclusion
-- Header Injection
+Fingerprint de servidor, SSL, DNS, portas abertas.
 
-### Fuzzer Adaptativo
-- Fuzzing inteligente com payloads evolutivos
-- Detecção automática de WAF
-- Bypass de rate limiting
-- Rotação de headers e IPs
+7.3 Headers Analyzer
 
-### Defense Detector
-- Detecção de WAF (Cloudflare, AWS, Sucuri, etc.)
-- Identificação de rate limiting
-- Detecção de CAPTCHA
-- Análise de proteções CSRF
+Analisa cabeçalhos, score de segurança e segurança passiva.
 
-### Memory System
-- Armazenamento de vulnerabilidades históricas
-- Base de dados de payloads efetivos
-- Correlação de padrões de ataque
-- Aprendizado contínuo
+7.4 Parser
 
-### AI Interpreter
-- Análise interpretativa com IA
-- Geração de payloads avançados
-- Sugestões de estratégias de ataque
-- Correlação inteligente de dados
+Coleta e analisa formulários, links, scripts e superfícies atacáveis.
 
-## 📊 Relatórios Gerados
+7.5 Inject Finder
 
-### Formatos Disponíveis
-- **JSON**: Dados estruturados para integração
-- **Markdown**: Documentação legível
-- **HTML**: Relatório web interativo
-- **PDF**: Relatório profissional para apresentação
+Testa pontos vulneráveis com payloads de injeção (XSS, SQLi, etc).
 
-### Conteúdo dos Relatórios
-- Resumo executivo com nível de risco
-- Detalhes técnicos da infraestrutura
-- Lista detalhada de vulnerabilidades
-- Recomendações prioritárias
-- Evidências e payloads utilizados
+7.6 Fuzzer Adaptativo
 
-## 🔒 Considerações de Segurança
+Executa fuzzing com evasão de WAFs e rotação de headers.
 
-### Uso Ético
-- Use apenas em sistemas que você possui ou tem autorização
-- Respeite rate limiting e políticas de uso
-- Não execute em produção sem autorização
-- Mantenha logs para auditoria
+7.7 Defense Detector
 
-### Configurações de Segurança
-- Modo stealth habilitado por padrão
-- Delays adaptativos entre requisições
-- Respeito automático a robots.txt
-- Detecção e respeito a WAF
+Detecta WAF, rate limit, CAPTCHA, CSRF, IP blocking.
 
-## 🤝 Contribuição
+7.8 Memory System
 
-### Como Contribuir
-1. Fork o projeto
-2. Crie uma branch para sua feature
-3. Commit suas mudanças
-4. Push para a branch
-5. Abra um Pull Request
+Cruza achados com banco interno de vulnerabilidades anteriores.
 
-### Áreas de Contribuição
-- Novos módulos de detecção
-- Melhorias na IA interpretativa
-- Novos formatos de relatório
-- Otimizações de performance
-- Documentação e exemplos
+7.9 AI Interpreter
 
-## 📝 Changelog
+Aplica IA para interpretar resultados e sugerir próximos vetores.
 
-### v1.0.0 (Atual)
-- Sistema base completo
-- IA interpretativa integrada
-- Sistema de memória e correlação
-- Fuzzer adaptativo
-- Detector de defesas avançado
-- Relatórios em múltiplos formatos
-- Sistema de configuração flexível
+⸻
 
-## 🐛 Problemas Conhecidos
+8. Relatórios Gerados
 
-### Limitações Atuais
-- Dependência de conexão com internet
-- Alguns WAFs podem detectar o scanning
-- IA requer configuração do OpenAI para funcionalidade completa
-- Geração de PDF requer biblioteca adicional
+8.1 Formatos
+	•	JSON
+	•	Markdown
+	•	HTML
+	•	PDF
 
-### Soluções
-- Use proxies para contornar bloqueios
-- Configure delays maiores em ambientes restritivos
-- IA local funciona sem OpenAI
-- ReportLab pode ser instalado separadamente
+8.2 Conteúdo
+	•	Nível de risco
+	•	Vetores explorados
+	•	Payloads e evidências
+	•	Status das defesas
+	•	Recomendação por prioridade
 
-## 📞 Suporte
+⸻
 
-### Documentação
-- README.md (este arquivo)
-- Comentários inline no código
-- Arquivos de configuração documentados
+9. Considerações de Segurança
 
-### Contato
-- Issues no GitHub
-- Documentação técnica nos módulos
-- Logs detalhados para debugging
+9.1 Uso Ético
+	•	Use apenas com autorização
+	•	Nunca execute em produção sem consentimento
+	•	Guarde logs e evidências
 
-## 📄 Licença
+9.2 Proteções Embutidas
+	•	Respeito a robots.txt
+	•	Modo stealth ativado
+	•	Delay adaptativo por padrão
+	•	Suporte a proxies e rotação de identidade
 
-Este projeto é distribuído sob licença MIT. Veja o arquivo LICENSE para mais detalhes.
+⸻
 
-## ⚠️ Disclaimer
+10. Contribuição
 
-O AEGIS Bug Hunter é uma ferramenta educacional e de pesquisa em segurança. O uso desta ferramenta é de responsabilidade do usuário. Os desenvolvedores não se responsabilizam por uso inadequado ou ilegal da ferramenta.
+10.1 Como contribuir
+	1.	Faça um fork
+	2.	Crie uma branch
+	3.	Commit suas alterações
+	4.	Envie um Pull Request
 
----
+10.2 Áreas sugeridas
+	•	Novos módulos (ex: SSRF, RCE, LDAP, JWT)
+	•	Expansão da IA embarcada
+	•	Visualização via dashboard
+	•	Exportação direta para plataformas (ex: HackerOne, Bugcrowd)
 
-**AEGIS Bug Hunter v1.0.0** - Sistema Autônomo de Bug Bounty com IA Embarcada
+⸻
 
-*Desenvolvido com ❤️ para a comunidade de segurança cibernética*
+11. Changelog
 
+v1.0.0 (Atual)
+	•	Estrutura modular completa
+	•	Execução por linha de comando
+	•	Geração de relatórios multi-formato
+	•	IA interpretativa integrada
+	•	Fuzzer adaptativo
+	•	Módulo de memória e aprendizado
+
+⸻
+
+12. Problemas Conhecidos
+	•	IA depende de conexão com OpenAI (se habilitado)
+	•	Geração de PDF requer instalação de reportlab
+	•	Alguns WAFs com comportamento agressivo bloqueiam varreduras longas
+
+⸻
+
+13. Suporte
+	•	Documentação neste arquivo (README.md)
+	•	Comentários inline no código
+	•	Issues abertas no GitHub
+	•	Logs detalhados no diretório logs/
+
+⸻
+
+14. Licença
+
+Distribuído sob a licença MIT.
+Consulte o arquivo LICENSE para mais detalhes.
+
+⸻
+
+15. Disclaimer
+
+O AEGIS Bug Hunter é uma ferramenta educacional e de pesquisa em segurança cibernética.
+O uso é de inteira responsabilidade do usuário.
+Nunca utilize contra sistemas que você não tem permissão.
+
+⸻
+
+AEGIS Bug Hunter v1.0.0
+Desenvolvido com dedicação por Felipe Di Carlo, com foco em automação, IA e segurança ofensiva aplicada.
+
+⸻
