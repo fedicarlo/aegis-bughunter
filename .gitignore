@@ -1,0 +1,18 @@
+# venv
+.venv/
+# python cache
+__pycache__/
+*/__pycache__/
+# artefatos de execução
+output/
+shared_reports/
+logs/
+*.log
+*.zip
+*.json
+*.db
+# backups/locks locais
+*.bak
+*.lock
+# sistema
+.DS_Store
